@@ -1,0 +1,32 @@
+{
+  "token-dashboard-timing": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "/usr/bin/python3 ./hooks/record_timing.py SessionStart",
+        "timeout": 5
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "/usr/bin/python3 ./hooks/record_timing.py PreInvocation",
+        "timeout": 5
+      }
+    ],
+    "PostInvocation": [
+      {
+        "type": "command",
+        "command": "/usr/bin/python3 ./hooks/record_timing.py PostInvocation",
+        "timeout": 5
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "/usr/bin/python3 ./hooks/record_timing.py Stop",
+        "timeout": 5
+      }
+    ]
+  }
+}
