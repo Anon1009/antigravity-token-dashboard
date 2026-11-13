@@ -8,23 +8,23 @@
   <style>
     :root,
     [data-theme="light"] {
-      --bg: var(--background, #f6f7f9);
-      --fg: var(--foreground, #14171f);
-      --accent: var(--primary, #2563eb);
-      --card-bg: var(--card, #ffffff);
-      --muted: color-mix(in srgb, var(--fg) 82%, var(--bg));
-      --faint: color-mix(in srgb, var(--fg) 65%, var(--bg));
-      --border: color-mix(in srgb, var(--fg) 16%, transparent);
-      --sunken: color-mix(in srgb, var(--fg) 6%, transparent);
-      --hover: color-mix(in srgb, var(--fg) 10%, transparent);
-      --accent-soft: color-mix(in srgb, var(--accent) 14%, transparent);
-      --ok: #15803d;
-      --ok-soft: rgba(21, 128, 61, 0.14);
-      --warn: #b45309;
-      --warn-soft: rgba(180, 83, 9, 0.15);
-      --bad: #dc2626;
-      --bad-soft: rgba(220, 38, 38, 0.14);
-      --teal: #0f766e;
+      --td-bg: var(--background, #f6f7f9);
+      --td-fg: var(--foreground, #14171f);
+      --td-accent: var(--primary, #2563eb);
+      --td-card-bg: var(--card, #ffffff);
+      --td-muted: color-mix(in srgb, var(--td-fg) 72%, var(--td-bg));
+      --td-faint: color-mix(in srgb, var(--td-fg) 56%, var(--td-bg));
+      --td-border: color-mix(in srgb, var(--td-fg) 16%, transparent);
+      --td-sunken: color-mix(in srgb, var(--td-fg) 7%, transparent);
+      --td-hover: color-mix(in srgb, var(--td-fg) 11%, transparent);
+      --td-accent-soft: color-mix(in srgb, var(--td-accent) 14%, transparent);
+      --td-ok: #15803d;
+      --td-ok-soft: rgba(21, 128, 61, 0.14);
+      --td-warn: #b45309;
+      --td-warn-soft: rgba(180, 83, 9, 0.15);
+      --td-bad: #dc2626;
+      --td-bad-soft: rgba(220, 38, 38, 0.14);
+      --td-teal: #0f766e;
 
       --title-brand: #1d4ed8;
       --title-speed: #1d4ed8;
@@ -39,23 +39,23 @@
     }
 
     [data-theme="dark"] {
-      --bg: var(--background, #111318);
-      --fg: var(--foreground, #f1f5f9);
-      --accent: var(--primary, #60a5fa);
-      --card-bg: var(--card, color-mix(in srgb, var(--bg) 90%, #ffffff));
-      --muted: color-mix(in srgb, var(--fg) 84%, var(--bg));
-      --faint: color-mix(in srgb, var(--fg) 66%, var(--bg));
-      --border: color-mix(in srgb, var(--fg) 20%, transparent);
-      --sunken: color-mix(in srgb, var(--fg) 8%, transparent);
-      --hover: color-mix(in srgb, var(--fg) 13%, transparent);
-      --accent-soft: color-mix(in srgb, var(--accent) 18%, transparent);
-      --ok: #4ade80;
-      --ok-soft: rgba(74, 222, 128, 0.18);
-      --warn: #fbbf24;
-      --warn-soft: rgba(251, 191, 36, 0.18);
-      --bad: #f87171;
-      --bad-soft: rgba(248, 113, 113, 0.18);
-      --teal: #2dd4bf;
+      --td-bg: var(--background, #111318);
+      --td-fg: var(--foreground, #f1f5f9);
+      --td-accent: var(--primary, #60a5fa);
+      --td-card-bg: var(--card, color-mix(in srgb, var(--td-bg) 90%, #ffffff));
+      --td-muted: color-mix(in srgb, var(--td-fg) 78%, var(--td-bg));
+      --td-faint: color-mix(in srgb, var(--td-fg) 62%, var(--td-bg));
+      --td-border: color-mix(in srgb, var(--td-fg) 20%, transparent);
+      --td-sunken: color-mix(in srgb, var(--td-fg) 9%, transparent);
+      --td-hover: color-mix(in srgb, var(--td-fg) 14%, transparent);
+      --td-accent-soft: color-mix(in srgb, var(--td-accent) 18%, transparent);
+      --td-ok: #4ade80;
+      --td-ok-soft: rgba(74, 222, 128, 0.18);
+      --td-warn: #fbbf24;
+      --td-warn-soft: rgba(251, 191, 36, 0.18);
+      --td-bad: #f87171;
+      --td-bad-soft: rgba(248, 113, 113, 0.18);
+      --td-teal: #2dd4bf;
 
       --title-brand: #93c5fd;
       --title-speed: #60a5fa;
@@ -68,23 +68,23 @@
 
     @media (prefers-color-scheme: dark) {
       :root:not([data-theme="light"]) {
-        --bg: var(--background, #111318);
-        --fg: var(--foreground, #f1f5f9);
-        --accent: var(--primary, #60a5fa);
-        --card-bg: var(--card, color-mix(in srgb, var(--bg) 90%, #ffffff));
-        --muted: color-mix(in srgb, var(--fg) 84%, var(--bg));
-        --faint: color-mix(in srgb, var(--fg) 66%, var(--bg));
-        --border: color-mix(in srgb, var(--fg) 20%, transparent);
-        --sunken: color-mix(in srgb, var(--fg) 8%, transparent);
-        --hover: color-mix(in srgb, var(--fg) 13%, transparent);
-        --accent-soft: color-mix(in srgb, var(--accent) 18%, transparent);
-        --ok: #4ade80;
-        --ok-soft: rgba(74, 222, 128, 0.18);
-        --warn: #fbbf24;
-        --warn-soft: rgba(251, 191, 36, 0.18);
-        --bad: #f87171;
-        --bad-soft: rgba(248, 113, 113, 0.18);
-        --teal: #2dd4bf;
+        --td-bg: var(--background, #111318);
+        --td-fg: var(--foreground, #f1f5f9);
+        --td-accent: var(--primary, #60a5fa);
+        --td-card-bg: var(--card, color-mix(in srgb, var(--td-bg) 90%, #ffffff));
+        --td-muted: color-mix(in srgb, var(--td-fg) 78%, var(--td-bg));
+        --td-faint: color-mix(in srgb, var(--td-fg) 62%, var(--td-bg));
+        --td-border: color-mix(in srgb, var(--td-fg) 20%, transparent);
+        --td-sunken: color-mix(in srgb, var(--td-fg) 9%, transparent);
+        --td-hover: color-mix(in srgb, var(--td-fg) 14%, transparent);
+        --td-accent-soft: color-mix(in srgb, var(--td-accent) 18%, transparent);
+        --td-ok: #4ade80;
+        --td-ok-soft: rgba(74, 222, 128, 0.18);
+        --td-warn: #fbbf24;
+        --td-warn-soft: rgba(251, 191, 36, 0.18);
+        --td-bad: #f87171;
+        --td-bad-soft: rgba(248, 113, 113, 0.18);
+        --td-teal: #2dd4bf;
 
         --title-brand: #93c5fd;
         --title-speed: #60a5fa;
@@ -103,8 +103,8 @@
     html, body {
       margin: 0;
       padding: 0;
-      background: var(--bg);
-      color: var(--fg);
+      background: var(--td-bg);
+      color: var(--td-fg);
       font-family: var(--font-sans);
       font-size: 12px;
       line-height: 1.45;
@@ -148,21 +148,21 @@
       border-radius: 999px;
       font-size: 11px;
       font-weight: 550;
-      background: var(--sunken);
-      color: var(--muted);
-      border: 1px solid var(--border);
+      background: var(--td-sunken);
+      color: var(--td-muted);
+      border: 1px solid var(--td-border);
       font-variant-numeric: tabular-nums;
     }
 
     .status-pill.live {
-      background: var(--ok-soft);
-      color: var(--ok);
+      background: var(--td-ok-soft);
+      color: var(--td-ok);
       border-color: transparent;
     }
 
     .status-pill.generating {
-      background: var(--accent-soft);
-      color: var(--accent);
+      background: var(--td-accent-soft);
+      color: var(--td-accent);
       border-color: transparent;
     }
 
@@ -197,9 +197,9 @@
     select, button.icon-btn {
       height: 28px;
       border-radius: 7px;
-      border: 1px solid var(--border);
-      background: var(--card-bg);
-      color: var(--fg);
+      border: 1px solid var(--td-border);
+      background: var(--td-card-bg);
+      color: var(--td-fg);
       font-family: var(--font-sans);
       font-size: 11px;
       padding: 0 8px;
@@ -207,7 +207,7 @@
     }
 
     select:focus, button.icon-btn:focus-visible {
-      border-color: var(--accent);
+      border-color: var(--td-accent);
     }
 
     button.icon-btn {
@@ -217,7 +217,7 @@
     }
 
     button.icon-btn:hover {
-      background: var(--hover);
+      background: var(--td-hover);
     }
 
     .kpi-grid {
@@ -233,8 +233,8 @@
     }
 
     .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
+      background: var(--td-card-bg);
+      border: 1px solid var(--td-border);
       border-radius: 10px;
       padding: 10px 11px;
       display: flex;
@@ -278,17 +278,18 @@
 
     .badge {
       font-size: 10px;
+      font-weight: 550;
       padding: 1px 6px;
       border-radius: 5px;
-      background: var(--sunken);
-      color: var(--muted);
+      background: var(--td-sunken);
+      color: var(--td-muted);
       white-space: nowrap;
     }
 
-    .badge.ok { background: var(--ok-soft); color: var(--ok); }
-    .badge.warn { background: var(--warn-soft); color: var(--warn); }
-    .badge.bad { background: var(--bad-soft); color: var(--bad); }
-    .badge.accent { background: var(--accent-soft); color: var(--accent); }
+    .badge.ok { background: var(--td-ok-soft); color: var(--td-ok); }
+    .badge.warn { background: var(--td-warn-soft); color: var(--td-warn); }
+    .badge.bad { background: var(--td-bad-soft); color: var(--td-bad); }
+    .badge.accent { background: var(--td-accent-soft); color: var(--td-accent); }
 
     .kpi-value {
       font-family: var(--font-mono);
@@ -301,14 +302,14 @@
 
     .kpi-unit {
       font-size: 11px;
-      font-weight: 500;
-      color: var(--muted);
+      font-weight: 550;
+      color: var(--td-muted);
       margin-left: 3px;
     }
 
     .kpi-sub {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--td-muted);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -321,21 +322,21 @@
       height: 5px;
       width: 100%;
       border-radius: 999px;
-      background: var(--sunken);
+      background: var(--td-sunken);
       overflow: hidden;
     }
 
     .bar-fill {
       height: 100%;
       border-radius: 999px;
-      background: var(--accent);
+      background: var(--td-accent);
       transition: width 0.25s ease;
     }
 
-    .bar-fill.ok { background: var(--ok); }
-    .bar-fill.warn { background: var(--warn); }
-    .bar-fill.bad { background: var(--bad); }
-    .bar-fill.teal { background: var(--teal); }
+    .bar-fill.ok { background: var(--td-ok); }
+    .bar-fill.warn { background: var(--td-warn); }
+    .bar-fill.bad { background: var(--td-bad); }
+    .bar-fill.teal { background: var(--td-teal); }
 
     .breakdown-row {
       display: flex;
@@ -348,13 +349,13 @@
       font-size: 10px;
       padding: 2px 6px;
       border-radius: 5px;
-      background: var(--sunken);
-      color: var(--fg);
+      background: var(--td-sunken);
+      color: var(--td-fg);
       font-variant-numeric: tabular-nums;
     }
 
     .chip span {
-      color: var(--muted);
+      color: var(--td-muted);
       font-family: var(--font-sans);
       margin-right: 3px;
     }
@@ -369,7 +370,7 @@
 
     .tabs {
       display: inline-flex;
-      background: var(--sunken);
+      background: var(--td-sunken);
       border-radius: 7px;
       padding: 2px;
       gap: 2px;
@@ -378,18 +379,18 @@
     .tab-btn {
       border: none;
       background: transparent;
-      color: var(--muted);
+      color: var(--td-muted);
       font-family: var(--font-sans);
       font-size: 11px;
       padding: 3px 8px;
       border-radius: 5px;
       cursor: pointer;
-      font-weight: 500;
+      font-weight: 550;
     }
 
     .tab-btn.active {
-      background: var(--card-bg);
-      color: var(--fg);
+      background: var(--td-card-bg);
+      color: var(--td-fg);
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     }
 
@@ -410,14 +411,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--faint);
+      color: var(--td-faint);
       font-size: 11px;
     }
 
     .chart-tooltip {
       font-family: var(--font-mono);
       font-size: 10.5px;
-      color: var(--muted);
+      color: var(--td-muted);
       min-height: 16px;
       font-variant-numeric: tabular-nums;
     }
@@ -438,7 +439,7 @@
     th, td {
       text-align: right;
       padding: 5px 6px;
-      border-bottom: 1px solid var(--border);
+      border-bottom: 1px solid var(--td-border);
       white-space: nowrap;
     }
 
@@ -451,7 +452,7 @@
       color: var(--title-table-head);
       position: sticky;
       top: 0;
-      background: var(--card-bg);
+      background: var(--td-card-bg);
       z-index: 1;
     }
 
@@ -465,7 +466,7 @@
 
     .footer {
       font-size: 10.5px;
-      color: var(--muted);
+      color: var(--td-muted);
       display: flex;
       flex-direction: column;
       gap: 3px;
@@ -763,7 +764,7 @@
         if (validCoords.length >= 2) {
           const poly = document.createElementNS(svgNS, 'polyline');
           poly.setAttribute('fill', 'none');
-          poly.setAttribute('stroke', state.chartMode === 'cache' ? 'var(--teal)' : 'var(--accent)');
+          poly.setAttribute('stroke', state.chartMode === 'cache' ? 'var(--td-teal)' : 'var(--td-accent)');
           poly.setAttribute('stroke-width', '2');
           poly.setAttribute('stroke-linejoin', 'round');
           poly.setAttribute('stroke-linecap', 'round');
@@ -776,7 +777,7 @@
           circle.setAttribute('cx', c.x.toFixed(1));
           circle.setAttribute('cy', c.y.toFixed(1));
           circle.setAttribute('r', '3.3');
-          circle.setAttribute('fill', state.chartMode === 'cache' ? 'var(--teal)' : 'var(--accent)');
+          circle.setAttribute('fill', state.chartMode === 'cache' ? 'var(--td-teal)' : 'var(--td-accent)');
           circle.style.cursor = 'pointer';
           circle.addEventListener('mouseenter', () => {
             tooltip.textContent = `Step #${c.stepIndex} · ${c.label}`;
