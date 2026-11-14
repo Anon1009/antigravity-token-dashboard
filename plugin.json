@@ -9,6 +9,7 @@
   },
   "homepage": "https://github.com/Anon1009/antigravity-token-dashboard",
   "repository": "https://github.com/Anon1009/antigravity-token-dashboard",
+  "license": "MIT",
   "logo": "assets/logo.svg",
   "suggestedPrompts": [
     "Open Token Dashboard to inspect live tok/s and cache hit rate",
